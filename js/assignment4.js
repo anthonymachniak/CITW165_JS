@@ -1,0 +1,9 @@
+/*Date: 2/17/2020Author: Anthony MachniakClass: CITW 165Exercise: Exercise 4 */(function () {    var hotel = getHotelData();    $("#hotelName").text(hotel.name);    $("#roomRate").text('$' + hotel.roomRate.toFixed(2));    $("#specialRate").text('$' + hotel.offerPrice());
+    $("#offerEnds").html(offerExpiresMessage());}());function offerExpiresMessage() {    var today = new Date();    var expirationDate = getWeekFromDate(today);    //Parse date into string components    var day = getDayOfWeek(expirationDate);    var date = expirationDate.getDate();    var month = getMonthOfYear(expirationDate);    var year = expirationDate.getFullYear();    return 'Offer expires next ' + day + ' <br />(' + date + ' ' + month + ' ' + year + ')';}//Separating original function into smaller chunks allows for unit testing via JUnit.function getWeekFromDate(date) {    return new Date(date.getTime() + 7 * 24 * 60 * 60 * 1000);}function getDayOfWeek(date) {    var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];    return dayNames[date.getDay()];}function getMonthOfYear(date) {    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];    return monthNames[date.getMonth()];
+}
+
+//This function can be replaced with an ajax call later to get server side data
+function getHotelData() {
+    var hotel = {        name: 'Hilton Hotel',        roomRate: 360,        discount: 20,        offerPrice: function () {            return this.roomRate * ((100 - this.discount) / 100);        }    };
+    return hotel;
+}
