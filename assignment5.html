@@ -1,23 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Show letter grade</title>
+    <meta charset="utf-8">
+    <title>Show letter grade</title>
     <script src="./js/jquery_3.3.1.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-	<script src="./js/letter_grade.js"></script>
-	<link rel="stylesheet" href="./css/letter_grade.css" type="text/css">
+    <script src="./js/letter_grade.js"></script>
+    <link rel="stylesheet" href="./css/letter_grade.css" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap_4.3.1.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/bootstrap_theme.css">
 </head>
 <body>
-<section>
-    <h3>Convert the Number Score to a Letter Grade</h3>
-    <form id="form1" action="#">
-    	<label for="score">Enter the number between 0 and 100</label> <input type="text" id="score" name="score">
-    	<p>&nbsp;</p>
-    	<input type="reset" id="reset">
-    	<input type="submit" id="submit" onClick="calc()">
-    </form>
-</section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="citwNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="assignmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Assignments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="assignmentDropdown">
+                        <a class="dropdown-item" href="./assignment2.html">Week 3 - Exercise 2</a>
+                        <a class="dropdown-item" href="./assignment3.html">Week 4 - Exercise 3</a>
+                        <a class="dropdown-item" href="./assignment4.html">Week 6 - Exercise 4</a>
+                        <a class="dropdown-item" href="./assignment5.html">Week 7 - Exercise 5</a>
+                        <a class="dropdown-item" href="#">Week 8 - Exercise 6</a>
+                        <a class="dropdown-item" href="#">Week 10 - Exercise 7</a>
+                        <a class="dropdown-item" href="#">Week 11 - Exercise 8</a>
+                        <a class="dropdown-item" href="#">Week 14 - Exercise 9</a>
+                        <a class="dropdown-item" href="#">Week 15 - Exercise 10</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Team Project</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section>
+        <h3>Convert the Number Score to a Letter Grade</h3>
+        <form id="form1" action="#">
+            <label for="score">Enter the number between 0 and 100</label> <input type="text" id="score" name="score">
+            <p>&nbsp;</p>
+            <input type="reset" id="reset">
+            <input type="submit" id="submit" onClick="calc()">
+        </form>
+    </section>
 </body>
 </html>
