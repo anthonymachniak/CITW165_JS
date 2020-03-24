@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Food List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/assignment6.css" type="text/css">
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 6: Events - Example</title>
+    <link rel="stylesheet" href="./css/assignment7.css" type="text/css">
     <link rel="stylesheet" href="./css/bootstrap_4.3.1.css">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/bootstrap_theme.css">
-  </head>
-  <body>
+    <!--SPECIAL NOTE - this won't actually record anything,
+        it's a non-working demo-->
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="collapse navbar-collapse" id="citwNavbar">
             <ul class="navbar-nav mr-auto">
@@ -36,20 +37,21 @@
             </ul>
         </div>
     </nav>
-
+    
     <div id="page">
-      <h1 id="header"></h1>
-      <h2>Buy groceries</h2>
-      <ul>
-        <li id="first"><em>fresh</em> figs</li>
-        <li id="second">pine nuts</li>
-        <li id="third">honey</li>
-        <li id="fourth">balsamic vinegar</li></ul>
+        <h1></h1>
+        <h2 id="noteName">Audio Note</h2>
+        <form action="http://example.org/">
+            <label for="noteInput">Enter note name:</label>
+            <input type="text" id="noteInput" />
+            <div id="buttons">
+                <a data-state="record" href="">record</a>
+            </div>
+        </form>
     </div>
-
     <script src="./js/jquery_3.3.1.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/assignment6.js"></script>
-  </body>
+    <script src="./js/assignment7.js"></script>
+</body>
 </html>
