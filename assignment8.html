@@ -1,15 +1,14 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<!--xmlns="http://www.w3.org/1999/xhtml">-->
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>JavaScript &amp; jQuery - Chapter 2: Basic JavaScript Instructions - Example</title>
+    <title>CITW 165 - Assignment 8 - Grocery List</title>
     <link rel="stylesheet" href="./css/bootstrap_4.3.1.css">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/bootstrap_theme.css">
+    <link rel="stylesheet" href="./css/assignment8.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="collapse navbar-collapse" id="citwNavbar">
@@ -39,51 +38,27 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <h1>Elderwood Academy</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-5">
-                <div id="greeting" class="message">Hello!</div>
-                <table>
-                    <tr class="table-active">
-                        <td>Custom letters: </td>
-                        <td id="userSign" class="text-primary"></td>
-                    </tr>
-                    <tr>
-                        <td>Cost Per Tile: </td>
-                        <td id="costPerTile"></td>
-                    </tr>
-                    <tr>
-                        <td>Total wooden tiles: </td>
-                        <td id="tiles">$</td>
-                    </tr>
-                    <tr class="table-info">
-                        <td>Subtotal: </td>
-                        <td id="subTotal"></td>
-                    </tr>
-                    <tr>
-                        <td>Shipping: </td>
-                        <td id="shipping"></td>
-                    </tr>
-                    <tr class="table-info">
-                        <td>Grand total: </td>
-                        <td id="grandTotal"></td>
-                    </tr>
-                </table>
-                <a href="#" class="action">Pay Now</a>
-                <img src="./images/paypalLogo.jpg" alt="Paypal Logo" height="42" width="42"/>
-            </div>
-            <div class="col-lg-4 ml-auto">
-                <img src="./images/woodenTiles.jpg" alt="Wooden Tiles with Letters Printed On Them" height="275" width="300"/>
-            </div>
-        </div>
+
+    <div id="page">
+        <div id="aboveMainPage"></div>
+        <h1 id="header"></h1>
+        <h2>Buy groceries <span id="counter"></span></h2>
+        <ul>
+            <li id="one" class="hot"><em>fresh</em> figs</li>
+            <li id="two" class="hot">pine nuts</li>
+            <li id="three" class="hot">honey</li>
+            <li id="four">balsamic vinegar</li>
+        </ul>
+        <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+        <form id="newItemForm">
+            <input type="text" id="itemDescription" placeholder="Add description" />
+            <input type="submit" id="add" value="add" />
+        </form>
     </div>
-    
-    <script src="./js/jquery_3.3.1.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/example.js"></script>
+
+        <script src="./js/jquery_3.3.1.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/assignment8.js"></script>
 </body>
 </html>
