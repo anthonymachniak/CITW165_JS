@@ -31,7 +31,7 @@
                         <a class="dropdown-item" href="./assignment8.html">Week 10 - Exercise 8</a>
                         <a class="dropdown-item" href="./assignment9_accordion.html">Week 12 - Exercise 9 - Accordion</a>
                         <a class="dropdown-item" href="./assignment9_session.html">Week 12 - Exercise 9 - Session Storage</a>
-                        <a class="dropdown-item" href="./assignment9_modal.html">Week 12 - Exercise 9 - Modal</a>
+                        <a class="dropdown-item" href="./assignment9_modal.html">Week 12 - Exercise 9 - Session Storage</a>
                         <a class="dropdown-item" href="#">Week 13 - Exercise 10</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Team Project</a>
@@ -41,45 +41,23 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <h1 class="display-3">Welcome!</h1>
-        <p class="lead">This website is to display Anthony Machniak's work for CITW 165 - Spring Semester 2020.</p>
-        <hr class="my-4">
-        <p>Professor: Dennis Pipper</p>
-        <p>Team Members: TBD</p>
+    <div id="prizes">
+        <h3>1st Prize</h3>
+        <div><p>First prize is toilet paper.</p></div>
+        <h3>2nd Prize</h3>
+        <div><p>Second prize is soap.</p></div>
+        <h3>3rd Prize</h3>
+        <div><p>Third prize is a gloves.</p></div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <h4 class="card-title">Assignments</h4>
-                    <p class="card-text">Use the navbar above to find links to this semesters' work.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <h4 class="card-title">Version Control</h4>
-                    <p class="card-text">Code is maintained in version control using <a style="color:darkblue" href="https://github.com/anthonymachniak/CITW165_JS">GitHub</a>.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <h4 class="card-title">Bootstrap</h4>
-                    <p class="card-text">This site uses css and javascript from <a href="https://getbootstrap.com/">Bootstrap</a>. Theme taken from <a href="https://bootswatch.com/cerulean/">Bootswatch</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="./js/jquery_3.3.1.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $('#prizes').accordion();
+        });
+    </script>
 </body>
 </html>
